@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+             
+
+    </head>
+
+    <body>       
+            
+       <main>
+        <img src="imagenes/Logo-alura.png" class="logo">
+    
+        <!-- apartado de escritura y botones encriptar y desencriptar--> 
+        <div class="fondo">
+            <textarea id="textoEncriptar"  placeholder="Ingrese texto aquí"></textarea>
+    
+            <div class="botones-2">
+                <p>Solo letras minusculas y sin acentos</p>
+                <button class="encriptar" onclick="encriptador()">Encriptar</button>
+                <button class="desencriptar" onclick="desencriptador()">Desencriptar</button>
+    
+            </div>
+
+        </div> 
+               <!-- segunda caja- mustra texto encriptado  boton copiar -->
+        <div class="caja-encriptada" id="prueba">
+            <textarea id="texto-cifrado" class="texto-encriptado"></textarea>
+            <button onclick="copiarTexto()" id="copiar">Copiar</button>                                                                                                   
+        </div> 
+        <!-- Caja que esta super puesta -->
+        <div class="caja-omar" id="div1">
+            <div class="cuadro-texto">                 
+                <h1>Ningun mensaje fue encontrado</h1>
+                <p class="ingresa-texto" >Ingresa el texto que desees encriptar o desencriptar</p>                   
+            </div>                              
+        </div>           
+       </main>  
+       
+       <footer>
+        <p>Sitio Web desarrollado por Omar Solano</p>
+       </footer>
+       <script src="app.js"></script>   
+    </body>
+
+</html>  
+
+
+        

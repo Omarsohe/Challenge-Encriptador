@@ -1,0 +1,212 @@
+body{
+    background: rgb(243, 255, 252, 1);
+}
+
+.fondo{
+    background: url(imagenes/background-encriptador.webp);
+    width: 60%;
+    height: 695px;
+    display: inline-block;
+}
+.logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+#textoEncriptar{
+    width: 577px;
+    height: 260px;
+    top: 168px;
+    left: 50px;
+    position: relative; 
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 217, 4);       
+    background: url(imagenes/candado.avif);
+    background-position: center;
+    border-color: rgb(255, 217, 4);
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 24px;
+    columns: 40;
+    row-gap: 5;
+    
+}
+
+#textoEncriptar::placeholder{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 217, 4);
+}
+
+
+p{
+    font-size: 16px;
+    font-style: italic;
+    padding: 10px;
+    color: rgb(255, 217, 4);
+}
+
+.botones-2{
+    width: 577px;
+    height: 103px;
+    position: relative;
+    top: 250px;
+    left: 50px;
+
+}
+
+button{
+    width: 286px;
+    height: 67px;
+    border-style: solid;
+    border-color: #011228;
+    border-radius: 24px;  
+}
+
+.encriptar {
+    background: #001b3c;
+    color: rgb(255, 217, 4);
+    font-weight: bold;
+}
+
+.desencriptar{
+    background:rgb(255, 217, 4);
+    color: #001b3c;
+    font-weight: bold;
+}
+
+.caja-encriptada{
+    width: 40%;
+    height: 695px;
+    position: relative;
+    display: inline-block;
+    position: absolute;
+    background: url(imagenes/background-encriptador.webp);  
+}
+
+.texto-encriptado{
+    width: 336px;    
+    height: 260px;
+    margin: 100px auto;
+    top: 20px;
+    position: relative;
+    border-radius: 24px;
+    border-width: 3px;  
+    border-style: solid;
+    border-color:rgb(255, 217, 4) ;
+    background: rgb(0, 0, 24);
+    display: block;
+    font-size: 25px;
+    font-style: italic;
+    padding: 30px 0;
+    color: rgb(255, 217, 4);
+    text-align: center;
+}
+
+.boton-copiar{
+    width: 336px;
+    margin: 20px 86px;
+}
+
+#copiar{    
+    width: 336px;
+    margin: 20px auto;
+    position: relative;
+    display: block;
+    background:rgb(255, 217, 4);
+    color: #001b3c;
+    font-weight: bold;
+    top: 35px;
+    border-width: 3px;  
+    border-style: solid;
+    border-color:rgb(0, 0, 24) ;
+   
+}
+
+.caja-omar{
+    width: 40%;
+    height: 650px;
+    display: inline-block;
+    position: absolute;
+    background: url(imagenes/background-encriptador.webp);
+}
+
+.cuadro-texto{ 
+    width: 336px;    
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+    top: 148px;
+    margin: 20px auto;
+    border-radius: 24px;
+    border-width: 3px;  
+    border-style: solid;
+    border-color:rgb(255, 217, 4) ;
+    background: rgb(0, 0, 24);
+}
+
+
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(255, 217, 4);
+}
+
+.ingresa-texto{
+    font-size: 20px;
+    font-style: italic;
+    padding: 80px;
+    color: rgb(255, 217, 4);
+    text-align: center;
+}
+
+footer{
+    background: rgb(0, 0, 24);
+ 
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 480px){
+
+    main{
+        height: 1389px;
+    }
+
+   .fondo{
+    width: 100%;
+    display: block;
+   }
+
+   #textoEncriptar{
+    width: 85%;
+    left: 25px;
+    background-position: center;
+
+    }
+
+   .botones-2{
+    left: 16%;
+    width: 70%;
+    height: 50px;
+    top: 30%;
+   }
+
+   .caja-encriptada{
+    width: 100%;
+   }
+
+   .caja-omar{
+    width: 100%;
+   }
+
+   footer{
+    text-align: center;
+   }
+}
